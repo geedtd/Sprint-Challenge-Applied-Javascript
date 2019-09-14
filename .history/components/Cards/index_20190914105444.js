@@ -30,8 +30,8 @@ async function fetchData(remoteDataSourceUri) {
 }
 function appendArticles(target, data) {
     
-    //console.log(`appendArticles Data:`);
-    //console.log(data);
+    console.log(`appendArticles Data:`);
+    console.log(data);
 
     data.then(r => {
         const topics = r.data.articles;
@@ -69,7 +69,7 @@ function appendArticles(target, data) {
     });
 }
 
-function Article(article) {
+function Article(articleData) {
     const card = document.createElement('div');
     const headline = document.createElement('div');
     const author = document.createElement('div');
