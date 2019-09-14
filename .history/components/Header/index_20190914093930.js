@@ -17,7 +17,7 @@ function Header() {
 
     var today = new Date();
     var timeFormat = { month:'long', day:'numeric', year:'numeric'};
-    date.textContent = today.toLocaleDateString("en-US", timeFormat).toUpperCase();
+    date.textContent = today.toLocaleDateString("en-US", options).toUpperCase();
     heading.textContent = "Lambda Times";
     temperature.textContent = "98°";
 
@@ -27,5 +27,5 @@ function Header() {
     heading.appendChild(heading)
     heading.appendChild(temperature);
 
-    header.classList.add('header')
+    header
 }
