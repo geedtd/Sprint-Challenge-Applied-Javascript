@@ -23,9 +23,9 @@ function Header() {
 
     //creating content structure
     
-    heading.appendChild(date);
-    heading.appendChild(heading)
-    heading.appendChild(temperature);
+    header.appendChild(date);
+    header.appendChild(heading)
+    header.appendChild(temperature);
 
     header.classList.add('header');
     date.classList.add('date');
