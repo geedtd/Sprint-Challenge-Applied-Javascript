@@ -42,7 +42,7 @@ An event listener detects when an event occurs, usually triggered by an input de
 
 4. Why would we convert a NodeList into an Array?
 
-Because in some cases NodeList is static which means that using DOM would have no effect on the contents withing that Nodelist. Changing it into an array allows manipulation of the data.
+Because in some cases NodeList is static which means that using DOM would have no effect on the contents withing that Nodelist. Changing it into an array allows manipulation of the data thus giving us access to use functions on it.
 
 5. What is a component?
 
