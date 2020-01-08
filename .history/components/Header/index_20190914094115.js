@@ -23,16 +23,9 @@ function Header() {
 
     //creating content structure
     
-    header.appendChild(date);
-    header.appendChild(heading)
-    header.appendChild(temperature);
+    heading.appendChild(date);
+    heading.appendChild(heading)
+    heading.appendChild(temperature);
 
-    header.classList.add('header');
-    date.classList.add('date');
-    temperature.classList.add('temp');
-
-    return header;
+    header.classList.add('header')
 }
-
-const headerContainer = document.querySelector('.header-container');
-headerContainer.appendChild(Header());

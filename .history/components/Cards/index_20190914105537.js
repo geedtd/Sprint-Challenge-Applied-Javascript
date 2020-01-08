@@ -37,7 +37,7 @@ function appendArticles(target, data) {
         const topics = r.data.articles;
         console.log(`Status: `+r.status);
         console.log('topics data:');
-        console.log(topics);
+        consolge.log(topics);
 
         const articleTopicNames = ['bootstrap', 'javascript', 'jquery', 'node', 'technology'];
         const articleTopics = [r.data.articles.bootstrap, r.data.articles.javascript ,r.data.articles.jquery , r.data.articles.node ,r.data.articles.technology];

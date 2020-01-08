@@ -33,25 +33,7 @@ function appendTopics(target, data) {
         console.log('data');
         console.log(topics);
         console.log('data count: '+count);
+        
 
-        for (let i = 0; i <= count-1; i++) {
-            const currentData = topics[i];
-            console.log(i);
-            console.log(currentData);
-
-            target.appendChild(Tab(currentData));
-
-        }
     })
-    .catch(e => {
-        console.log(e);
-    });
-}
-
-function Tab(data) {
-    const tab = document.createElement('div');
-    tab.textContent = data;
-    tab.classList.add('tab');
-
-    return tab;
 }

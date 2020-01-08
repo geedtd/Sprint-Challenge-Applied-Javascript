@@ -21,7 +21,7 @@
 const cards = document.querySelector('.cards-container');
 const articleData = fetchData('https://lambda-times-backend.herokuapp.com/articles');
 console.log('articleData:');
-console.log(articleData);
+consolge.log(articleData);
 
 appendArticles(cards, articleData);
 
@@ -30,14 +30,14 @@ async function fetchData(remoteDataSourceUri) {
 }
 function appendArticles(target, data) {
     
-    //console.log(`appendArticles Data:`);
-    //console.log(data);
+    console.log(`appendArticles Data:`);
+    console.log(data);
 
     data.then(r => {
         const topics = r.data.articles;
         console.log(`Status: `+r.status);
         console.log('topics data:');
-        console.log(topics);
+        consolge.log(topics);
 
         const articleTopicNames = ['bootstrap', 'javascript', 'jquery', 'node', 'technology'];
         const articleTopics = [r.data.articles.bootstrap, r.data.articles.javascript ,r.data.articles.jquery , r.data.articles.node ,r.data.articles.technology];
@@ -69,7 +69,7 @@ function appendArticles(target, data) {
     });
 }
 
-function Article(article) {
+function Article(articleData) {
     const card = document.createElement('div');
     const headline = document.createElement('div');
     const author = document.createElement('div');
