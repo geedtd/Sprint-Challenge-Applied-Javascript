@@ -17,15 +17,22 @@ function Header() {
 
     var today = new Date();
     var timeFormat = { month:'long', day:'numeric', year:'numeric'};
-    date.textContent = today.toLocaleDateString("en-US", options).toUpperCase();
+    date.textContent = today.toLocaleDateString("en-US", timeFormat).toUpperCase();
     heading.textContent = "Lambda Times";
     temperature.textContent = "98°";
 
     //creating content structure
     
-    heading.appendChild(date);
-    heading.appendChild(heading)
-    heading.appendChild(temperature);
+    header.appendChild(date);
+    header.appendChild(heading)
+    header.appendChild(temperature);
 
-    header
+    header.classList.add('header');
+    date.classList.add('date');
+    temperature.classList.add('temp');
+
+    return header;
 }
+
+const headerContainer = document.querySelector('.header-container');
+headerContainer.appendChild(Header());
